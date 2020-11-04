@@ -40,6 +40,20 @@
   animation: city 20s linear infinite;
 }
 
+.car {
+  width: 400px;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
 @keyframes highway {
   100% {
     transform: translateX(-3400px);
@@ -49,5 +63,17 @@
 @keyframes city {
   100% {
     transform: translateX(-1400px);
+  }
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
   }
 }
